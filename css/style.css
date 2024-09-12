@@ -60,30 +60,47 @@ main{
     padding: 9px 15px;
 }
 input [type='text']{
-    min-width: 24vw;
-    padding: 3px 12px;
     border: 1px solid black;
-    border-radius: 4px;
-    font-size: 20px;
+    padding-left: 10px;
+      
+    outline: none;
+    font-size: 12px;
 }
+input:focus {
+    border: none;
+    outline: none;
+    background-color: white;
+  }
 .container h1{
     padding: 12px;
     
 }
 #resultCont div::first-letter{
     text-transform: uppercase;
+    
 }
+#resultCont div {
+    padding: 10px;
+    
+    border-bottom:1px solid black ;
+}
+
 .btn{
     background-color: black;
     color: white;
     padding: 9px 12px;
-    border: 1px solid gray;
-    border-radius: 6px;
+    
+    
     cursor: pointer;
 }
 form{
     display: flex;
-    gap: 20px;
+    /* border: 1px solid black;
+    border-radius: 10px; */
+    overflow: hidden;
+    padding-left: 10px;
+    
+
 }
 footer{
     background-color: black;
@@ -98,9 +115,11 @@ footer{
 }
 #resultCont {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0,1fr));
-    gap: 20px;
-    padding: 40px 10px;
+    grid-template-columns: repeat(1, minmax(0,1fr));
+    border: 1px solid black;
+   width: 100%;
+   max-width: 600px;
+    margin-top: 10px;
 }
 @media only screen and (max-width:600px){
     body{
